@@ -1,5 +1,6 @@
-package es.keensoft.crawler.fs;
+package org.alfresco.cmis.assoc;
 
+import org.alfresco.cmis.assoc.service.CmisService;
 import org.apache.chemistry.opencmis.client.api.Document;
 import org.apache.chemistry.opencmis.client.api.ItemIterable;
 import org.apache.chemistry.opencmis.client.api.ObjectId;
@@ -11,8 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import es.keensoft.crawler.fs.cmis.CmisService;
 
 /**
  *  Add relationships with CMIS using following custom model:

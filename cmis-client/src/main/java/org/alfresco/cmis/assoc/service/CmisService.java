@@ -1,4 +1,4 @@
-package es.keensoft.crawler.fs.cmis;
+package org.alfresco.cmis.assoc.service;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
