@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="cmisassoc:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <imports>
+        <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+    </imports>
+
+    <namespaces>
+        <namespace uri="http://www.alfresco.org/model/cmis-assoc/1.0" prefix="cmisassoc"/>
+    </namespaces>
+
+    <aspects>
+        <aspect name="cmisassoc:relationable">
+          <associations>
+        		<association name="cmisassoc:related">
+        			<title>Related Documents</title>
+        			<source>
+        				<mandatory>false</mandatory>
+        				<many>true</many>
+        			</source>
+        			<target>
+        				<class>cm:content</class>
+        				<mandatory>false</mandatory>
+        				<many>true</many>
+        			</target>
+        		</association>
+        	</associations>
+        </aspect>
+    </aspects>
+
+</model>
