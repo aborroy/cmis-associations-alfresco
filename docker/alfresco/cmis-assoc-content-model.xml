@@ -2,6 +2,7 @@
 <model name="cmisassoc:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
 
     <imports>
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
         <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
     </imports>
 
@@ -11,6 +12,13 @@
 
     <aspects>
         <aspect name="cmisassoc:relationable">
+          <!-- Store the association duplicated in a property to make it visible from CMIS QL -->
+          <properties>
+            <property name="cmisassoc:relatedRef">
+              <type>d:noderef</type>
+              <multiple>true</multiple>
+            </property>
+          </properties>
           <associations>
         		<association name="cmisassoc:related">
         			<title>Related Documents</title>
